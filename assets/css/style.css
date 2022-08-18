@@ -1,0 +1,27 @@
+html, body {
+    background-color: #cbc8fc;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* SEARCHBAR */
+
+.navbar {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+/* MAIN WEATHER SECTION */
+
+.card-deck {
+    margin: 10px;
+    margin-right: 20px;
+}
+
+/* 5 DAY FORECAST */
+
+.forecast{
+    max-height: 12rem;
+    overflow: hidden;
+}
