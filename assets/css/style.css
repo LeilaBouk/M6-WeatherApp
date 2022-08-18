@@ -17,6 +17,7 @@ html, body {
 .card-deck {
     margin: 10px;
     margin-right: 20px;
+    margin-top: 50px;
 }
 
 /* 5 DAY FORECAST */
@@ -24,4 +25,9 @@ html, body {
 .forecast{
     max-height: 12rem;
     overflow: hidden;
+}
+
+.forecast:hover{
+    cursor: pointer;
+    background-color: red;
 }
