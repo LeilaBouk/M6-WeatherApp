@@ -2,6 +2,9 @@ html, body {
     background-color: #cbc8fc;
     max-width: 100%;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* SEARCHBAR */
@@ -9,6 +12,20 @@ html, body {
 .navbar {
     margin-top: 30px;
     margin-bottom: 60px;
+    margin-left: 30px;
+}
+
+.searchbar {
+    background-color: rgba(80, 80, 224, 0.244);
+    border: none;
+    color: white;
+}
+
+.searchbar:focus {
+    background-color: rgba(245, 245, 255, 0.244);
+    box-shadow: none;
+    border: none;
+    color: #4b4687;
 }
 
 
@@ -18,6 +35,11 @@ html, body {
     margin: 10px;
     margin-right: 20px;
     margin-top: 50px;
+}
+
+.main {
+    max-height: 12rem;
+    overflow: hidden;
 }
 
 /* 5 DAY FORECAST */
