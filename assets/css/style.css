@@ -38,18 +38,46 @@ html, body {
 }
 
 .main {
-    max-height: 12rem;
+    max-height: 15rem;
     overflow: hidden;
 }
 
 /* 5 DAY FORECAST */
 
 .forecast{
-    max-height: 12rem;
+    max-height: 15rem;
     overflow: hidden;
 }
 
 .forecast:hover{
     cursor: pointer;
-    background-color: red;
+    background-color: #adaadb;;
+}
+
+.FT {
+    padding: none;
+    margin: none;
+}
+
+.FF {
+    padding: none;
+    margin: none;
+}
+
+.FW {
+    padding: none;
+    margin: none;
+}
+
+.FH {
+    padding: none;
+    margin: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1410px){
+    html, body{
+        background-color: #caabd7;
+    }
 }

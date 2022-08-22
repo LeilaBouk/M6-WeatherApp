@@ -9,6 +9,11 @@ var wind = $("#wind")[0];
 var humidity = $("#humidity")[0];
 var feelslike = $("#feels")[0];
 
+// 5 DAY FORECAST
+var fiveTemp = $(".FT");
+var fiveFeel = $(".FF");
+var fiveHumid = $(".FH");
+var fiveWind = $(".FW");
 
 var apiKey = "0e68794d803126cda81a8f7ef2182cd1";
 
@@ -46,6 +51,10 @@ function getWeather(event) {
     .then(function (data) {
         console.log(data)
 
+        for(i = 1; i <= 5; i++){
+            
+        }
+
     })
       
     // .catch(err => alert("Sorry this city is unavailable!"))
@@ -68,3 +77,5 @@ searchbtn.on("click", getWeather)
 // SAVE RECENTLY SAVED CITIES TO LOCAL STORAGE
 
 // API CALL FOR RECENTLY SAVED CITIES BUT IN LIL BOXES
+
+// add moment js for dates
