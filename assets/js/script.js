@@ -51,8 +51,8 @@ function getWeather(event) {
     .then(function (data) {
         console.log(data)
 
-        for(i = 1; i <= 5; i++){
-            
+        for(i = 0; i <= 5; i++){
+            document.getElementById("FT" +(i+1)).textContent = Number(data.list[i].main.temp);
         }
 
     })
@@ -71,7 +71,7 @@ searchbtn.on("click", getWeather)
 // BREAKING IT DOWN CAUSE I HAVE A HEADACHE
 
 // CALL THE INFO NEEDED 
-// 5 day forecast *in progress*
+// 5 day forecast do in forloop *in progress*
 // city temp, uv, humid, wind *check*
 
 // SAVE RECENTLY SAVED CITIES TO LOCAL STORAGE
@@ -79,3 +79,7 @@ searchbtn.on("click", getWeather)
 // API CALL FOR RECENTLY SAVED CITIES BUT IN LIL BOXES
 
 // add moment js for dates
+
+// Add custom assets
+
+//rig car animation
