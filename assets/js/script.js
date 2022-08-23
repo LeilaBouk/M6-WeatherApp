@@ -1,4 +1,4 @@
-// var searchbar = document.getElementById("searchbar");
+
 var searchbar = $("#searchbar")[0];
 var searchbtn = $(".searchbtn");
 
@@ -9,16 +9,12 @@ var wind = $("#wind")[0];
 var humidity = $("#humidity")[0];
 var feelslike = $("#feels")[0];
 
-// 5 DAY FORECAST
-var fiveTemp = $(".FT");
-var fiveFeel = $(".FF");
-var fiveHumid = $(".FH");
-var fiveWind = $(".FW");
-
 var apiKey = "0e68794d803126cda81a8f7ef2182cd1";
 
+// ------------------------------------------------------
 
 // MAIN WEATHER
+
 function getWeather(event) {
     // Prevent page reload
     event.preventDefault();
@@ -41,6 +37,7 @@ function getWeather(event) {
         humidity.textContent = `Humidity: ${data.main.humidity}`;
     })
 
+    // -------------------------------------------------------------
     // 5 DAY
 
     var DayApiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchbar.value}&units=imperial&appid=${apiKey}` 
@@ -78,10 +75,10 @@ searchbtn.on("click", getWeather)
 // BREAKING IT DOWN CAUSE I HAVE A HEADACHE
 
 // CALL THE INFO NEEDED 
-// 5 day forecast do in forloop *in progress*
+// 5 day forecast do in forloop *check*
 // city temp, uv, humid, wind *check*
 
-// SAVE RECENTLY SAVED CITIES TO LOCAL STORAGE
+// SAVE RECENTLY SAVED CITIES TO LOCAL STORAGE *in progess*
 
 // API CALL FOR RECENTLY SAVED CITIES BUT IN LIL BOXES
 

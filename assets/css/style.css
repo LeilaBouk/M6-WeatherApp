@@ -1,3 +1,7 @@
+:root {
+    --darkest: #000000;
+}
+
 html, body {
     background-color: #cbc8fc;
     max-width: 100%;
