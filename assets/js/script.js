@@ -52,7 +52,14 @@ function getWeather(event) {
         console.log(data)
 
         for(i = 0; i <= 5; i++){
+            // Temperature
             document.getElementById("FT" +(i+1)).textContent = Number(data.list[i].main.temp);
+            // Feels Like
+            document.getElementById("FF" +(i+1)).textContent = Number(data.list[i].main.feels_like);
+            // Humidity
+            document.getElementById("FH" +(i+1)).textContent = Number(data.list[i].main.humidity);
+            // Wind
+            document.getElementById("FW" +(i+1)).textContent = Number(data.list[i].wind.speed);
         }
 
     })
