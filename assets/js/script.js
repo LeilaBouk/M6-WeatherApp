@@ -16,6 +16,7 @@ var apiKey = "0e68794d803126cda81a8f7ef2182cd1";
 // MAIN WEATHER
 
 function getWeather(event) {
+ 
     // Prevent page reload
     event.preventDefault();
     console.log(`Searched weather in ${searchbar.value}`)
@@ -36,6 +37,8 @@ function getWeather(event) {
         wind.textContent = `Wind Speed: ${data.wind.speed}`;
         humidity.textContent = `Humidity: ${data.main.humidity}`;
     })
+    
+
 
     // -------------------------------------------------------------
     // 5 DAY
@@ -63,12 +66,15 @@ function getWeather(event) {
       
     // .catch(err => alert("Sorry this city is unavailable!"))
 
+
     //Clear searchbar
     searchbar.value = "";
+
+    
 }
 
 
-// getWeather()
+
 
 searchbtn.on("click", getWeather) 
 
@@ -79,6 +85,10 @@ searchbtn.on("click", getWeather)
 // city temp, uv, humid, wind *check*
 
 // SAVE RECENTLY SAVED CITIES TO LOCAL STORAGE *in progess*
+// Check if its a valid city and not an error with if else
+// Save the city name to local storage
+// Call the api for the saved city names
+// set a limit of cities to save to 5
 
 // API CALL FOR RECENTLY SAVED CITIES BUT IN LIL BOXES
 
